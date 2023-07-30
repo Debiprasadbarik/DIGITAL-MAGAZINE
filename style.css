@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+    background-image: url("./logimg3.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    /* background-attachment: fixed; */
+    /* background-repeat:no-repeat; */
+    height: 100vh;
+}
+.login{
+  display: flex;
+  /* position: absolute; */
+  /* left: 500px; */
+  align-items: center;
+  justify-content: center;
+  /* width: 540px; */
+  padding-top: 500px;
+  height: 40px;
+} 
+.top h1{
+  display: flex;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+}
+.btn {
+  cursor: pointer;
+  background: #73c25f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 2.5rem;
+  outline: none;
+  border: 2px solid #00abf0;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  overflow: hidden;
+}
+.btn:hover{
+  background: #73c25f ;
+  opacity: 0.6;
+  color: #fff;
+  font-weight: 800;
+}
+
+button {
+  cursor: pointer;
+  width: 150px;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #73c25f;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 20px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #73c25f;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #e8e8e8;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
